@@ -1,0 +1,141 @@
+{
+  "info": {
+    "name": "Voting System API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Candidates",
+      "item": [
+        {
+          "name": "Get All Candidates",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/candidates"
+            }
+          }
+        },
+        {
+          "name": "Create Candidate",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "http://localhost:8080/api/candidates"
+            }
+          }
+        },
+        {
+          "name": "Get Candidate by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/candidates/:id"
+            }
+          }
+        },
+        {
+          "name": "Update Candidate",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "http://localhost:8080/api/candidates/:id"
+            }
+          }
+        },
+        {
+          "name": "Delete Candidate",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8080/api/candidates/:id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Voters",
+      "item": [
+        {
+          "name": "Get All Voters",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/voters"
+            }
+          }
+        },
+        {
+          "name": "Create Voter",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "http://localhost:8080/api/voters"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Elections",
+      "item": [
+        {
+          "name": "Get All Elections",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/elections"
+            }
+          }
+        },
+        {
+          "name": "Create Election",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "http://localhost:8080/api/elections"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Votes",
+      "item": [
+        {
+          "name": "Get All Votes",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/votes"
+            }
+          }
+        },
+        {
+          "name": "Cast Vote",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "http://localhost:8080/api/votes"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Results",
+      "item": [
+        {
+          "name": "Get Election Results",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/results"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
